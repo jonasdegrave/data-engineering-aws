@@ -19,7 +19,11 @@ def alias_post(body):  # noqa: E501
     """
     if connexion.request.is_json:
         body = AliasBody.from_dict(connexion.request.get_json())  # noqa: E501
-    return 'do some magic!'
+
+    print("[DEBUG]")
+    print(body)
+
+    return 'Do some magic! [1]'
 
 
 def profile_post(body):  # noqa: E501
@@ -34,7 +38,11 @@ def profile_post(body):  # noqa: E501
     """
     if connexion.request.is_json:
         body = ProfileBody.from_dict(connexion.request.get_json())  # noqa: E501
-    return 'do some magic!'
+
+    print("[DEBUG]")
+    print(body)
+
+    return 'Do some magic! [2]'
 
 
 def track_post(body):  # noqa: E501
@@ -49,4 +57,8 @@ def track_post(body):  # noqa: E501
     """
     if connexion.request.is_json:
         body = TrackBody.from_dict(connexion.request.get_json())  # noqa: E501
-    return 'do some magic!'
+
+    print("[DEBUG]")
+    print(body)
+
+    return 'Do some magic! [3]'

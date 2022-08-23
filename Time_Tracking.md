@@ -15,7 +15,7 @@
 
 ## Time Data
 
-* Begin: ??? (UTC-3)
+* Begin: 18h29 (UTC-3)
 
 * End: ??? (UTC-3)
 
