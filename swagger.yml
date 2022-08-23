@@ -25,7 +25,7 @@ paths:
       responses:
         "200":
           description: OK
-      x-openapi-router-controller: tracking_server.controllers.default_controller
+      x-openapi-router-controller: swagger_server.controllers.default_controller
   /alias:
     post:
       summary: Assotiate different identifiers to the same entity.
@@ -47,7 +47,7 @@ paths:
       responses:
         "200":
           description: OK
-      x-openapi-router-controller: tracking_server.controllers.default_controller
+      x-openapi-router-controller: swagger_server.controllers.default_controller
   /profile:
     post:
       summary: Save profile attributes for an particular user
@@ -65,7 +65,7 @@ paths:
       responses:
         "200":
           description: OK
-      x-openapi-router-controller: tracking_server.controllers.default_controller
+      x-openapi-router-controller: swagger_server.controllers.default_controller
 components:
   schemas:
     trackBody:

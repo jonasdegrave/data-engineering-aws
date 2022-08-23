@@ -6,11 +6,24 @@
 
 * Begin: 21h00 (UTC-3)
 
-* End: TBD
+* End: 23h00 (UTC-3)
 
-* Time Spent: TBD
+* Time Spent: 2h00
 
-## Activities (Planned):
+
+# Day 2 :
+
+## Time Data
+
+* Begin: ??? (UTC-3)
+
+* End: ??? (UTC-3)
+
+* Time Spent: ???
+
+
+
+# Activities (Planned):
 
 - Everything (code, docs, etc.) are to be in version control. It's up to you
   how you'd like to organize it just as long as you can add me to a repo.
