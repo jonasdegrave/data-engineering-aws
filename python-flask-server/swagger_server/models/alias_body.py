@@ -14,7 +14,13 @@ class AliasBody(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, new_user_id: str=None, original_user_id: str=None, timestamp_utc: int=None):  # noqa: E501
+
+    def __init__(
+        self,
+        new_user_id: str = None,
+        original_user_id: str = None,
+        timestamp_utc: int = None,
+    ):  # noqa: E501
         """AliasBody - a model defined in Swagger
 
         :param new_user_id: The new_user_id of this AliasBody.  # noqa: E501
@@ -25,22 +31,22 @@ class AliasBody(Model):
         :type timestamp_utc: int
         """
         self.swagger_types = {
-            'new_user_id': str,
-            'original_user_id': str,
-            'timestamp_utc': int
+            "new_user_id": str,
+            "original_user_id": str,
+            "timestamp_utc": int,
         }
 
         self.attribute_map = {
-            'new_user_id': 'newUserId',
-            'original_user_id': 'originalUserId',
-            'timestamp_utc': 'timestampUTC'
+            "new_user_id": "newUserId",
+            "original_user_id": "originalUserId",
+            "timestamp_utc": "timestampUTC",
         }
         self._new_user_id = new_user_id
         self._original_user_id = original_user_id
         self._timestamp_utc = timestamp_utc
 
     @classmethod
-    def from_dict(cls, dikt) -> 'AliasBody':
+    def from_dict(cls, dikt) -> "AliasBody":
         """Returns the dict as a model
 
         :param dikt: A dict.
@@ -69,7 +75,9 @@ class AliasBody(Model):
         :type new_user_id: str
         """
         if new_user_id is None:
-            raise ValueError("Invalid value for `new_user_id`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `new_user_id`, must not be `None`"
+            )  # noqa: E501
 
         self._new_user_id = new_user_id
 
@@ -92,7 +100,9 @@ class AliasBody(Model):
         :type original_user_id: str
         """
         if original_user_id is None:
-            raise ValueError("Invalid value for `original_user_id`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `original_user_id`, must not be `None`"
+            )  # noqa: E501
 
         self._original_user_id = original_user_id
 
@@ -115,6 +125,8 @@ class AliasBody(Model):
         :type timestamp_utc: int
         """
         if timestamp_utc is None:
-            raise ValueError("Invalid value for `timestamp_utc`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `timestamp_utc`, must not be `None`"
+            )  # noqa: E501
 
         self._timestamp_utc = timestamp_utc

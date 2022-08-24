@@ -30,9 +30,9 @@ def alias_post(body):  # noqa: E501
     for i in range(100):
         print(f"[DEBUG] Posting # {i}")
         response = firehose_manager.kinesis.post(
-            payload = {
-            "message": "Hello World!",
-            "id": i,
+            payload={
+                "message": "Hello World!",
+                "id": i,
             }
         )
 

@@ -14,7 +14,10 @@ class ProfileBody(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, user_id: str=None, attributes: object=None, timestamp_utc: int=None):  # noqa: E501
+
+    def __init__(
+        self, user_id: str = None, attributes: object = None, timestamp_utc: int = None
+    ):  # noqa: E501
         """ProfileBody - a model defined in Swagger
 
         :param user_id: The user_id of this ProfileBody.  # noqa: E501
@@ -25,22 +28,22 @@ class ProfileBody(Model):
         :type timestamp_utc: int
         """
         self.swagger_types = {
-            'user_id': str,
-            'attributes': object,
-            'timestamp_utc': int
+            "user_id": str,
+            "attributes": object,
+            "timestamp_utc": int,
         }
 
         self.attribute_map = {
-            'user_id': 'userId',
-            'attributes': 'attributes',
-            'timestamp_utc': 'timestampUTC'
+            "user_id": "userId",
+            "attributes": "attributes",
+            "timestamp_utc": "timestampUTC",
         }
         self._user_id = user_id
         self._attributes = attributes
         self._timestamp_utc = timestamp_utc
 
     @classmethod
-    def from_dict(cls, dikt) -> 'ProfileBody':
+    def from_dict(cls, dikt) -> "ProfileBody":
         """Returns the dict as a model
 
         :param dikt: A dict.
@@ -69,7 +72,9 @@ class ProfileBody(Model):
         :type user_id: str
         """
         if user_id is None:
-            raise ValueError("Invalid value for `user_id`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `user_id`, must not be `None`"
+            )  # noqa: E501
 
         self._user_id = user_id
 
@@ -92,7 +97,9 @@ class ProfileBody(Model):
         :type attributes: object
         """
         if attributes is None:
-            raise ValueError("Invalid value for `attributes`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `attributes`, must not be `None`"
+            )  # noqa: E501
 
         self._attributes = attributes
 
@@ -115,6 +122,8 @@ class ProfileBody(Model):
         :type timestamp_utc: int
         """
         if timestamp_utc is None:
-            raise ValueError("Invalid value for `timestamp_utc`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `timestamp_utc`, must not be `None`"
+            )  # noqa: E501
 
         self._timestamp_utc = timestamp_utc

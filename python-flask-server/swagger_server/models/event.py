@@ -14,7 +14,10 @@ class Event(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, event_name: str=None, metadata: object=None, timestamp_utc: int=None):  # noqa: E501
+
+    def __init__(
+        self, event_name: str = None, metadata: object = None, timestamp_utc: int = None
+    ):  # noqa: E501
         """Event - a model defined in Swagger
 
         :param event_name: The event_name of this Event.  # noqa: E501
@@ -25,22 +28,22 @@ class Event(Model):
         :type timestamp_utc: int
         """
         self.swagger_types = {
-            'event_name': str,
-            'metadata': object,
-            'timestamp_utc': int
+            "event_name": str,
+            "metadata": object,
+            "timestamp_utc": int,
         }
 
         self.attribute_map = {
-            'event_name': 'eventName',
-            'metadata': 'metadata',
-            'timestamp_utc': 'timestampUTC'
+            "event_name": "eventName",
+            "metadata": "metadata",
+            "timestamp_utc": "timestampUTC",
         }
         self._event_name = event_name
         self._metadata = metadata
         self._timestamp_utc = timestamp_utc
 
     @classmethod
-    def from_dict(cls, dikt) -> 'Event':
+    def from_dict(cls, dikt) -> "Event":
         """Returns the dict as a model
 
         :param dikt: A dict.
@@ -69,7 +72,9 @@ class Event(Model):
         :type event_name: str
         """
         if event_name is None:
-            raise ValueError("Invalid value for `event_name`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `event_name`, must not be `None`"
+            )  # noqa: E501
 
         self._event_name = event_name
 
@@ -92,7 +97,9 @@ class Event(Model):
         :type metadata: object
         """
         if metadata is None:
-            raise ValueError("Invalid value for `metadata`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `metadata`, must not be `None`"
+            )  # noqa: E501
 
         self._metadata = metadata
 
@@ -115,6 +122,8 @@ class Event(Model):
         :type timestamp_utc: int
         """
         if timestamp_utc is None:
-            raise ValueError("Invalid value for `timestamp_utc`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `timestamp_utc`, must not be `None`"
+            )  # noqa: E501
 
         self._timestamp_utc = timestamp_utc

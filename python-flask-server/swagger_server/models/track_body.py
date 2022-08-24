@@ -15,7 +15,8 @@ class TrackBody(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, user_id: str=None, events: List[Event]=None):  # noqa: E501
+
+    def __init__(self, user_id: str = None, events: List[Event] = None):  # noqa: E501
         """TrackBody - a model defined in Swagger
 
         :param user_id: The user_id of this TrackBody.  # noqa: E501
@@ -23,20 +24,14 @@ class TrackBody(Model):
         :param events: The events of this TrackBody.  # noqa: E501
         :type events: List[Event]
         """
-        self.swagger_types = {
-            'user_id': str,
-            'events': List[Event]
-        }
+        self.swagger_types = {"user_id": str, "events": List[Event]}
 
-        self.attribute_map = {
-            'user_id': 'userId',
-            'events': 'events'
-        }
+        self.attribute_map = {"user_id": "userId", "events": "events"}
         self._user_id = user_id
         self._events = events
 
     @classmethod
-    def from_dict(cls, dikt) -> 'TrackBody':
+    def from_dict(cls, dikt) -> "TrackBody":
         """Returns the dict as a model
 
         :param dikt: A dict.
@@ -65,7 +60,9 @@ class TrackBody(Model):
         :type user_id: str
         """
         if user_id is None:
-            raise ValueError("Invalid value for `user_id`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `user_id`, must not be `None`"
+            )  # noqa: E501
 
         self._user_id = user_id
 
@@ -88,6 +85,8 @@ class TrackBody(Model):
         :type events: List[Event]
         """
         if events is None:
-            raise ValueError("Invalid value for `events`, must not be `None`")  # noqa: E501
+            raise ValueError(
+                "Invalid value for `events`, must not be `None`"
+            )  # noqa: E501
 
         self._events = events

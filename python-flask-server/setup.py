@@ -12,10 +12,7 @@ VERSION = "1.0.0"
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
 
-REQUIRES = [
-    "connexion",
-    "swagger-ui-bundle>=0.0.2"
-]
+REQUIRES = ["connexion", "swagger-ui-bundle>=0.0.2"]
 
 setup(
     name=NAME,
@@ -26,11 +23,10 @@ setup(
     keywords=["Swagger", "Tracking API"],
     install_requires=REQUIRES,
     packages=find_packages(),
-    package_data={'': ['swagger/swagger.yaml']},
+    package_data={"": ["swagger/swagger.yaml"]},
     include_package_data=True,
-    entry_points={
-        'console_scripts': ['swagger_server=swagger_server.__main__:main']},
+    entry_points={"console_scripts": ["swagger_server=swagger_server.__main__:main"]},
     long_description="""\
      There is no authentication needed for this server.
-    """
+    """,
 )

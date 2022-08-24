@@ -21,12 +21,12 @@ class TestDefaultController(BaseTestCase):
         """
         body = AliasBody()
         response = self.client.open(
-            '/alias',
-            method='POST',
+            "/alias",
+            method="POST",
             data=json.dumps(body),
-            content_type='application/json')
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
+            content_type="application/json",
+        )
+        self.assert200(response, "Response body is : " + response.data.decode("utf-8"))
 
     def test_profile_post(self):
         """Test case for profile_post
@@ -35,12 +35,12 @@ class TestDefaultController(BaseTestCase):
         """
         body = ProfileBody()
         response = self.client.open(
-            '/profile',
-            method='POST',
+            "/profile",
+            method="POST",
             data=json.dumps(body),
-            content_type='application/json')
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
+            content_type="application/json",
+        )
+        self.assert200(response, "Response body is : " + response.data.decode("utf-8"))
 
     def test_track_post(self):
         """Test case for track_post
@@ -49,14 +49,15 @@ class TestDefaultController(BaseTestCase):
         """
         body = TrackBody()
         response = self.client.open(
-            '/track',
-            method='POST',
+            "/track",
+            method="POST",
             data=json.dumps(body),
-            content_type='application/json')
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
+            content_type="application/json",
+        )
+        self.assert200(response, "Response body is : " + response.data.decode("utf-8"))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import unittest
+
     unittest.main()
