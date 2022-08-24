@@ -3,7 +3,8 @@ git fetch --all
 
 # WARNING: This discards all local changes!
 # (for production EC2 only, not for dev)
-git reset --hard origin/master
+git reset --hard HEAD
+git pull
 
 # Make scripts executable
 chmod u+x server-config.sh
