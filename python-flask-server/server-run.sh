@@ -10,8 +10,8 @@ git reset --hard HEAD
 git pull
 
 # Make scripts executable
-chmod u+x server-config.sh
-chmod u+x server-run.sh
+chmod u+x ~/data-engineering-aws/python-flask-server/server-config.sh
+chmod u+x ~/data-engineering-aws/python-flask-server/server-run.sh
 
 # Run server-config.sh in case there are new config dependencies
 ~/data-engineering-aws/python-flask-server/server-config.sh
