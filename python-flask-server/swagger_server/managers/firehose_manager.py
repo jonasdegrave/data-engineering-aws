@@ -31,7 +31,7 @@ class KinesisFirehose:
         :return: None
         """
         self.streamName = StreamName
-        self.client = boto3.client("firehose")
+        self.client = boto3.client("firehose", region_name="eu-central-1")
 
     @property
     def describe(self):
