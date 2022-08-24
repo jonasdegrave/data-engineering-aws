@@ -24,13 +24,37 @@
 
 # Day 3 :
 
-## Time Data
+## Time Data (Part 1)
 
 * Begin: 12h45 (UTC-3)
+
+* End: 17h00 (UTC-3)
+
+* Time Spent: 4h15
+
+
+## Time Data (Part 2)
+
+* Begin: ??? (UTC-3)
 
 * End: ??? (UTC-3)
 
 * Time Spent: ???
+
+
+# Total Time:
+
+* Day 1: 2h00
+
+* Day 2: 5h30
+
+* Day 3 (Part 1): 4h15
+
+* Day 3 (Part 2): ???
+
+TOTAL TIME: 11h45
+
+(Time Budget: 15h00)
 
 
 
