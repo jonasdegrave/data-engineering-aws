@@ -35,7 +35,7 @@
 
 ## Time Data (Part 2)
 
-* Begin: ??? (UTC-3)
+* Begin: 20h00 (UTC-3)
 
 * End: ??? (UTC-3)
 
