@@ -32,3 +32,6 @@ override.tf.json
 ## Excluding python virtualenv 'env'
 env
 __pycache__
+
+## Excluding SSH files
+ssh
