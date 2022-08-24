@@ -9,12 +9,15 @@ git fetch --all
 git reset --hard HEAD
 git pull
 
+# Navigate to server directory
+cd ~/data-engineering-aws/python-flask-server/
+
 # Make scripts executable
-chmod u+x ~/data-engineering-aws/python-flask-server/server-config.sh
-chmod u+x ~/data-engineering-aws/python-flask-server/server-run.sh
+chmod u+x server-config.sh
+chmod u+x server-run.sh
 
 # Run server-config.sh in case there are new config dependencies
-~/data-engineering-aws/python-flask-server/server-config.sh
+./server-config.sh
 
 # Run Flask HTTP server
 python3 -m swagger_server
