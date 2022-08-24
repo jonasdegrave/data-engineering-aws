@@ -16,4 +16,4 @@ aws configure set output table
 pip3 install boto3
 
 # Install the requirements for Flask
-pip3 install -r requirements.txt
+pip3 install -r ~/data-engineering-aws/python-flask-server/requirements.txt
