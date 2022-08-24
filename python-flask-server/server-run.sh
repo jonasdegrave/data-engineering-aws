@@ -1,3 +1,6 @@
+# Navigate to project directory
+cd ~/data-engineering-aws/
+
 # Pull changes from Git
 git fetch --all
 
@@ -11,7 +14,7 @@ chmod u+x server-config.sh
 chmod u+x server-run.sh
 
 # Run server-config.sh in case there are new config dependencies
-./server-config.sh
+~/data-engineering-aws/python-flask-server/server-config.sh
 
 # Run Flask HTTP server
 python3 -m swagger_server
