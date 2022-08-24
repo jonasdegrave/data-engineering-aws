@@ -17,9 +17,9 @@
 
 * Begin: 18h29 (UTC-3)
 
-* End: ??? (UTC-3)
+* End: 23:56 (UTC-3)
 
-* Time Spent: ???
+* Time Spent: 5h30
 
 
 
