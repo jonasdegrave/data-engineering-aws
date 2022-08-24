@@ -50,6 +50,7 @@ class KinesisFirehose:
         :param payload: JSON
         :return: JSON response
         """
+
         json_payload = json.dumps(payload) + "\n"
         json_payload_encoded = json_payload.encode("utf-8")
 

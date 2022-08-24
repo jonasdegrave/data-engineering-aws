@@ -18,7 +18,9 @@ Describe the AWS infrastructure setup
 
 # Deploy the http server to the cloud.
 
-Describe process of setting up HTTP Server in EC2 instance
+Describe process of setting up HTTP Server in EC2 instance.
+
+EC2 Production Environment URL endpoint: http://ec2-3-70-229-217.eu-central-1.compute.amazonaws.com:8080
 
 # Everything (code, docs, etc.) are to be in version control. It's up to you how you'd like to organize it just as long as you can add me to a repo.
 
@@ -28,6 +30,8 @@ Describe usage of Git in the project
 # Have some very basic tests showing the system works.
 
 Describe HTTP Requests testing features
+
+Use Swagger UI to test API endpoints in production EC2: http://ec2-3-70-229-217.eu-central-1.compute.amazonaws.com:8080/ui/
 
 
 # Implement the infrastructure in terraforms and ansibles do that it can be deployed in as few commands as possible.

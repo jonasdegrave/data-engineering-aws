@@ -6,6 +6,7 @@ from swagger_server.models.profile_body import ProfileBody  # noqa: E501
 from swagger_server.models.track_body import TrackBody  # noqa: E501
 from swagger_server import util
 
+import json
 
 from swagger_server.managers import firehose_manager
 
@@ -21,25 +22,16 @@ def alias_post(body):  # noqa: E501
     :rtype: None
     """
     if connexion.request.is_json:
-        body = AliasBody.from_dict(connexion.request.get_json())  # noqa: E501
+        json_body = connexion.request.get_json()
+        body = AliasBody.from_dict(body)  # noqa: E501
 
-    print("[DEBUG]")
-    print(body)
-    print(firehose_manager.kinesis.describe)
+    # TODO: Since this is a prototype, some front-end and back-end for the \
+    # project has been skipped. Ideally we should have a DB to update data \
+    # from models in back-end and a front-end to trigger the API endpoints.
 
-    for i in range(100):
-        print(f"[DEBUG] Posting # {i}")
-        response = firehose_manager.kinesis.post(
-            payload={
-                "message": "Hello World!",
-                "id": i,
-            }
-        )
+    response = firehose_manager.kinesis.post(payload=json_body)
 
-    print("[DEBUG]")
-    print(response)
-
-    return "Do some magic! [1]"
+    return json.loads(response)
 
 
 def profile_post(body):  # noqa: E501
@@ -53,12 +45,16 @@ def profile_post(body):  # noqa: E501
     :rtype: None
     """
     if connexion.request.is_json:
+        json_body = connexion.request.get_json()
         body = ProfileBody.from_dict(connexion.request.get_json())  # noqa: E501
 
-    print("[DEBUG]")
-    print(body)
+    # TODO: Since this is a prototype, some front-end and back-end for the \
+    # project has been skipped. Ideally we should have a DB to update data \
+    # from models in back-end and a front-end to trigger the API endpoints.
 
-    return "Do some magic! [2]"
+    response = firehose_manager.kinesis.post(payload=json_body)
+
+    return json.loads(response)
 
 
 def track_post(body):  # noqa: E501
@@ -72,9 +68,13 @@ def track_post(body):  # noqa: E501
     :rtype: None
     """
     if connexion.request.is_json:
+        json_body = connexion.request.get_json()
         body = TrackBody.from_dict(connexion.request.get_json())  # noqa: E501
 
-    print("[DEBUG]")
-    print(body)
+    # TODO: Since this is a prototype, some front-end and back-end for the \
+    # project has been skipped. Ideally we should have a DB to update data \
+    # from models in back-end and a front-end to trigger the API endpoints.
 
-    return "Do some magic! [3]"
+    response = firehose_manager.kinesis.post(payload=json_body)
+
+    return json.loads(response)
