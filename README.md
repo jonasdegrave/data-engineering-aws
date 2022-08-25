@@ -1,11 +1,14 @@
-# Data Engineering Challenge
+# **Data Engineering Challenge**
 
-Your client needs a scalable HTTP api that writes raw data to
-a data lake in AWS S3. The data stored here is about user behavior,
-specifically about tracking which features are being used by each
-user in order to understand what drives retention.
+Your client needs a scalable HTTP API that writes raw data to a data lake in AWS S3. The data stored here is about user behavior, specifically about tracking which features are being used by each user to understand what drives retention.
 
-## Prompt and Challenge
+## **Documentation**
+
+> See the **Documentation.md** file for more detailed project development documentation.
+
+Below is the original 'Challenge Statement' for this project:
+
+# **Prompt and Challenge**
 
 ### Technical Information
 
@@ -56,16 +59,16 @@ You should
   how you'd like to organize it just as long as you can add me to a repo.
 - Have some very basic tests showing the system works.
 - Implement the infrastructure in terraforms and ansibles do that it can be deployed
-  in as few commands as possible
-- Write good documentation
+  in as few commands as possible.
+- Write good documentation.
 
 ### Bonus
 
 If you finish the above and want to move forward with bonus tasks to make
 your application stand out, you may continue on to the following:
 
-- Write a locustfile to stress test the http server
-- Encrypt the server with letsencrypt
+- Write a locustfile to stress test the http server.
+- Encrypt the server with letsencrypt.
 
 ## Additional Information
 
@@ -77,4 +80,3 @@ cover the costs by transfering the money to you directly.
 I know this sounds like a strange requirement but as the first data scientist
 / data engineer at Bond Touch, you may very well end up doing these kinds
 of tasks.
-
