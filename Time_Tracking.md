@@ -37,9 +37,9 @@
 
 * Begin: 20h00 (UTC-3)
 
-* End: ??? (UTC-3)
+* End: 23h10 (UTC-3)
 
-* **Time Spent:** ???
+* **Time Spent:** 3h10
 
 
 # **Total Time:**
@@ -50,9 +50,9 @@
 
 * Day 3 (Part 1): 4h15
 
-* Day 3 (Part 2): ???
+* Day 3 (Part 2): 3h10
 
-**TOTAL TIME:** 11h45
+**TOTAL TIME:** 14h55
 
 (Time Budget: 15h00)
 
